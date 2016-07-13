@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Calculator" default="jar"> <target name="compile">  
+<mkdir dir="target/classes"></mkdir>
+ <javac srcdir="src " destdir="target/classes"> 
+ </javac> </target>   
+<target name="run" > <java classname="Calculator"> 
+<classpath path="target/classes"> </classpath> </java> </target>  
+<target name="jar" depends="run"> 
+<jar jarfile="target/Calculator.jar" basedir="target/classes">
+ <manifest> <attribute name="Main.class" value="Calculator">
+  </attribute> </manifest> </jar> </target>  
+</project>
