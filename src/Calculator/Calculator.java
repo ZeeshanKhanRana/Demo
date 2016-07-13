@@ -48,12 +48,12 @@ package Calculator;
 
 		int function1()
 		{
-			int num1=2,num2=3, ans;
+		int num1=2,num2=3, ans;
 			try{
 				num1=Integer.parseInt(textFieldNum1.getText());
 				num2=Integer.parseInt(textFieldNum2.getText());
 				ans=num1+num2;
-				textField.setText(Integer.toString(ans));
+			textField.setText(Integer.toString(ans));
 
 		
 			}
